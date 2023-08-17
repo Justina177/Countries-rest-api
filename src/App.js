@@ -15,7 +15,7 @@ function App() {
         <div className="container">
         <Router>
           <Routes>
-          <Route path="/allcountries" element={<AllCountries />} />
+          <Route path="/" element={<AllCountries />} />
           <Route path="/country/:countryName" element={<CountryInfo />} />
           </Routes>
         </Router>

@@ -33,7 +33,7 @@ const AllCountries = () => {
     try {
       const res = await fetch(`${apiURL}/name/${countryName}`);
 
-      if (!res.ok) throw new Error("Not found any country!");
+      if (!res.ok) throw new Error("Not found or not a country!");
 
       const data = await res.json();
       setCountries(data);
